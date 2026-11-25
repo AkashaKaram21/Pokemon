@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@mipmap/eeve_background"/>
+    <foreground android:drawable="@mipmap/eeve_foreground"/>
+    <monochrome android:drawable="@mipmap/eeve_foreground"/>
+</adaptive-icon>
