@@ -1,15 +1,9 @@
 package com.example.pokemon
 
 import android.os.Bundle
-import android.widget.LinearLayout
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.pokemon.databinding.ActivityMainBinding
-import com.example.pokemon.recyclerview.Pokemon
 import com.example.pokemon.recyclerview.PokemonAdapter
 import com.example.pokemon.recyclerview.PokemonSource
 
@@ -25,9 +19,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun initRecyclerView() {
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = PokemonAdapter(PokemonSource.pokemonList) { pokemon ->
+        // Usamos ViewBinding en lugar de findViewById, ya que el binding ya existe
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.adapter = PokemonAdapter(PokemonSource.pokemonList) { pokemon ->
             // Handle item click here (e.g., show a Toast or open a detail screen)
             // val name = pokemon.title
         }

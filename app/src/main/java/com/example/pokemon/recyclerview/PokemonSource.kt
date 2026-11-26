@@ -8,7 +8,7 @@ class PokemonSource {
             Pokemon(
                 title = "Meowth",
                 subtitle = "Pokémon Gato Araña",
-                photo = R.drawable.meowth_foreground,
+                photo = R.mipmap.meowth, // Antes meowth_round: usamos la misma versión que el resto
                 type = "Normal",
                 text = "Le encantan las cosas redondas y brillantes, sobre todo las monedas. Duerme durante el día y por la noche sale a buscar objetos que brillen para llevárselos."
             ),
